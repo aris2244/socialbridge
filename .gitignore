@@ -1,0 +1,16 @@
+# Security
+.env
+
+# Database
+scheduler.db
+
+# Uploads folder
+uploads/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OAuth Tokens
+youtube_token.json
+token_data.json

@@ -1,0 +1,28 @@
+# ── Web framework ─────────────────────────────────────────────────────────────
+fastapi
+uvicorn[standard]
+python-multipart          # για video file uploads
+ 
+# ── Database ──────────────────────────────────────────────────────────────────
+sqlalchemy                # ORM για SQLite
+aiosqlite                 # async SQLite driver
+ 
+# ── Background scheduler ──────────────────────────────────────────────────────
+apscheduler               # ελέγχει κάθε λεπτό τι πρέπει να αναρτηθεί
+ 
+# ── AI - Caption generation ───────────────────────────────────────────────────
+# Χρησιμοποιούμε Gemini 2.5 Flash-Lite (φθηνότερο διαθέσιμο model)
+# ⚠️  Αποσύρεται 16 Οκτ 2026 → άλλαξε σε gemini-3.1-flash-lite μετά
+google-generativeai
+ 
+# ── Configuration (.env αρχείο) ───────────────────────────────────────────────
+python-dotenv
+pydantic-settings
+ 
+# ── HTTP client (για platform API calls) ─────────────────────────────────────
+httpx
+ 
+# ── YouTube Data API v3 ───────────────────────────────────────────────────────
+google-auth
+google-auth-oauthlib
+google-api-python-client
